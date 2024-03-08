@@ -12,8 +12,8 @@ app.use(cors());
 app.get('/', () => {
   return 'oie'
 })
-app.post('/webhook', (body) => {
-  console.log(body.pedidoId)
+app.post('/webhook', (req,res) => {
+  return res.status(200).json(req.body)
 })
 
 app.post('/processarPagamento', (req, res) => {
