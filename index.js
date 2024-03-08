@@ -13,7 +13,7 @@ app.get('/', () => {
   return 'oie'
 })
 app.post('/webhook', (req,res) => {
-  console.log(req)
+  return req
 })
 
 app.post('/processarPagamento', (req, res) => {
