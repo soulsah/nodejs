@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/', () => {
+  return 'oie'
+})
 app.post('/webhook', (req,res) => {
   console.log(req)
 })
